@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML - Defensa oral.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><span class="naranja">HTML</span> - Defensa oral.</h1>
+    <h2>Estimados alumnos:</h2>
+    <p>
+        Es fundamental que utilicen el material proporcionado para su estudio y preparación para la defensa oral. Este material ha sido cuidadosamente seleccionado para ofrecerles los recursos necesarios para comprender los conceptos clave y desarrollar argumentos sólidos.
+    </p>
+<pre><code class="cpp">1   &lt;!<span class="verde">DOCTYPE</span> <span class="celeste">html</span>>                                             <span class="gris">&lt;!-- Cuando usas &lt;DOCTYPE html>, estás indicando que el documento  está escrito en HTML5. Aunque no se especifica explícitamente "HTML5" en la declaración, los navegadores modernos interpretan &lt;!DOCTYPE html> como una señal para renderizar la página usando las reglas de HTML5.--&gt;</span>
+2   &lt;<span class="verde">html</span> <span class="celeste">lang</span>=<span class="celeste">"en"</span>>                                            &lt;!-- Es la etiqueta raiz, contiene todo el contenido del documento HTML. Puede tener atributos, como lang, que especifica el idioma del contenido ( &lt;html lang="es"&gt; para español).--&gt;
+3   &lt;<span class="verde">head</span>>                                                      &lt;!--Contiene metadatos sobre el documento, como el título de la página y la configuración de caracteres. No se muestra directamente en el contenido visible de la página.--&gt;
+4       &lt;<span class="verde">meta</span> <span class="celeste">charset</span>=<span class="celeste">"UTF-8"</span>>                                  &lt;!-- Define la codificación de caracteres utilizada en el documento.--&gt;
+5       &lt;<span class="verde">link</span> <span class="celeste">rel</span>=<span class="celeste">"stylesheet"</span> <span class="celeste">href</span>=<span class="celeste">"styles.css"</span>>               &lt;!-- Vincula una hoja de estilo CSS externa. --&gt;
+6       &lt;<span class="verde">title</span>>Document&lt;/<span class="verde">title</span>>                                 &lt;!-- Titulo de pestaña --&gt;
+7   &lt;/<span class="verde">head</span>>
+8   &lt;<span class="verde">body</span>>                                                      &lt;!-- Etiqueta de apertura del body --&gt;&lt;!-- Contiene el contenido visible de la página web, como texto, imágenes, enlaces, y otros elementos. Es la parte que los usuarios ven cuando visitan la página. --&gt;
+9       &lt;<span class="verde">h1</span>>&lt;/<span class="verde">h1</span>>&lt;<span class="verde">h2</span>>&lt;<span class="verde">h2</span>>&lt;<span class="verde">/h2</span>>&lt;<span class="verde">h3</span>>&lt;<span class="verde">/h2</span>>
+10          &lt;<span class="verde">p</span>>&lt;<span class="verde">p</span>>                                              &lt;!-- Define un párrafo --&gt;
+11          &lt;<span class="verde">i</span>>&lt;<span class="verde">/i</span>>&lt;<span class="verde">em</span>>&lt;<span class="verde">em</span>>                                     &lt;!-- Las dos pone el texto en cursiva, pero em le da una importancia semántica al texto, sirve para enfatizar un texto, es decir darle importancia--&gt;
+12          &lt;<span class="verde">b</span>>&lt;/<span class="verde">b</span>>                                             &lt;!-- Se utiliza para poner en negrita el texto que contiene, haciendo que visualmente destaque del resto del contenido--&gt;
+13          &lt;<span class="verde">strong</span>>&lt;/<span class="verde">strong</span>>                                   &lt;!-- Se utiliza en HTML para resaltar texto, dándole una importancia especial.--&gt;
+14          &lt;<span class="rojo">center</span>>&lt;/<span class="rojo">center</span>>                                   &lt;!-- La etiqueta se utiliza para centrar contenido, pero está obsoleta, por lo que aparece en color rojo.--&gt;
+15          &lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="celeste">"url"</span>>                                      &lt;!-- Define un enlace. href es un atributo--&gt;
+16          &lt;<span class="verde">img</span> <span class="celeste">src</span>=<span class="celeste">"imagen.jpg"</span> <span class="celeste">alt</span>=<span class="celeste">"Descripción"</span>>            &lt;!--Inserta una imagen. es una etiqueta vacia no se necesita cerrarla--&gt;
+17          &lt;<span class="verde">video</span> <span class="celeste">src</span>=<span class="celeste">""</span> <span class="celeste">controls</span>=<span class="celeste">""</span>>&lt;/<span class="verde">video</span>>                  &lt;!-- Etiqueta para insertar videos, el atributo controls es el atributo que genera que el navegador le asigne a nuestro video los controles, ejemplo: iniciar video, detener video, mutear sonido, aumentar o bajar sonido --&gt;
+18          &lt;<span class="verde">audio</span> <span class="celeste">src</span>=<span class="celeste">""</span>>&lt;/<span class="verde">audio</span>>                              &lt;!--Etiqueta para insertar audios, src significa source que signica en español fuente y es un atributo--&gt;
+19          &lt;<span class="verde">ul</span>>&lt;/<span class="verde">ul</span>>                                           &lt;!--Lista Desordenada. Se utiliza para crear una lista de elementos donde el orden no es importante. Los elementos en una lista desordenada están precedidos por viñetas o puntos.--&gt;
+20          &lt;<span class="verde">ol</span>>&lt;/<span class="verde">ol</span>>                                           &lt;!-- Lista Ordenada. Se utiliza para crear una lista de elementos en la que el orden es importante. Los elementos en una lista ordenada están precedidos por números o letras. --&gt;
+21          &lt;<span class="verde">li</span>>&lt;/<span class="verde">li</span>>                                           &lt;!-- Elemento de Lista. Se utiliza dentro de las etiquetas &lt;ul> o &lt;ol> para definir cada uno de los ítems o elementos de la lista. --&gt;
+22          &lt;<span class="verde">table</span>>                                             &lt;!-- Define una tabla en HTML. --&gt;
+23              &lt;<span class="verde">thead</span>>                                         &lt;!-- Define el encabezado de la tabla, que suele contener títulos o nombres de columna.--&gt;
+24                &lt;<span class="verde">tr</span>>                                          &lt;!-- -- Define una fila en una tabla. --&gt; 
+25                      &lt;<span class="verde">th</span>>&lt;/<span class="verde">th</span>>                               &lt;!--Define una celda de encabezado en una tabla. --&gt;
+26              &lt;/<span class="verde">thead</span>>
+27              &lt;<span class="verde">tbody</span>>                                         &lt;!-- Es el cuerpo de la tabla, agrupa el contenido principal --&gt;
+28                  &lt;<span class="verde">tr</span>>                                        &lt;!-- Define una fila en una tabla. --&gt;
+29                      &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>                               &lt;!-- Define una celda de data --&gt;
+30                  &lt;/<span class="verde">tr</span>>
+31              &lt;/<span class="verde">tbody</span>>
+32              &lt;<span class="verde">tfoot</span>>&lt;/<span class="verde">tfoot</span>>
+33          &lt;/<span class="verde">table</span>>
+34          &lt;<span class="verde">div</span>>&lt;/<span class="verde">div</span>>                                         &lt;!-- Se utiliza para crear contenedores o divisiones en un documento --&gt;
+35          &lt;<span class="verde">header</span>>&lt;/<span class="verde">header</span>>                                   &lt;!-- Define el encabezado de una página --&gt;
+36          &lt;<span class="verde">nav</span>>&lt;/<span class="verde">nav</span>>                                         &lt;!-- Agrupa los enlaces de navegación--&gt;
+37          &lt;<span class="verde">section</span>>&lt;/<span class="verde">section</span>>                                 &lt;!-- Define una sección dentro del documento.--&gt;
+38          &lt;<span class="verde">article</span>>&lt;/<span class="verde">article</span>>                                 &lt;!-- Encapsula contenido independiente --&gt;
+39          &lt;<span class="verde">main</span>>&lt;/<span class="verde">main</span>>                                       &lt;!-- Agrupa el contenido principal de la página.--&gt;
+40          &lt;<span class="verde">aside</span>>&lt;/<span class="verde">aside</span>>                                     &lt;!-- Define contenido secundario --&gt;
+41          &lt;<span class="verde">footer</span>>&lt;/<span class="verde">footer</span>>                                   &lt;!-- Define el pie de página de un documento--&gt;
+42          &lt;<span class="verde">form</span>>&lt;/<span class="verde">form</span>>                                       &lt;!--La etiqueta se usa para crear un formular --&gt;
+43          &lt;<span class="verde">input</span> <span class="celeste">type</span>=<span class="celeste">"text"</span>>                                 &lt;!--input en HTML se utiliza para crear varios tipos de controles interactivos en formularios ejemplo: text, password, email, number, radio, date, checkbox, submit y button --&gt;
+44          &lt;<span class="verde">fieldset</span>>                                          &lt;!-- Se usa para organizar visualmente los elementos del formulario, creando una caja alrededor de ellos. --&gt;
+45              &lt;<span class="verde">legend</span>&lt;/<span class="verde">legend</span>>                                &lt;!-- El texto dentro de &lt;legend> aparece como un encabezado para el contenido del &lt;fieldset> --&gt;
+46          &lt;/<span class="verde">fieldset</span>>
+47          &lt;<span class="verde">select</span>>                                            &lt;!-- Define un menú desplegable que permite a los usuarios seleccionar una opción de una lista.--&gt;
+48              &lt;<span class="verde">option</span>>&lt;/<span class="verde">option</span>>                               &lt;!-- Define cada opción dentro de un menú desplegable creado con &lt;select>--&gt;
+49          &lt;/<span class="verde">select</span>>
+50  &lt;/<span class="verde">body</span>>                                                     &lt;!-- Etiqueta de cierre del body --&gt;
+51 &lt;/<span class="verde">html</span>>
+</code></pre>
+<br>
+<hr>
+<br>
+    <h2>Temas teóricos adicionales que serán evaluados:</h2>
+    <ul type="square">
+        <li>
+            <b>¿Qué es un navegador</b><br>
+            <p>
+                Un navegador web es un programa o aplicación que permite acceder, interpretar y visualizar páginas web en Internet. Ejemplos: <code>Google Chrome</code>, <code>Mozilla Firefox</code> y <code>Microsoft Edge</code>.
+            </p>
+        </li>
+        <li>
+            <b>¿Qué es un metadato?</b>
+            <p>
+                Un metadato es información que describe las características o propiedades de un archivo, documento o conjunto de datos. Su función es ayudar a identificar, organizar y comprender mejor la información.
+            </p>
+            <p>
+               Por ejemplo, en cualquier archivo de computadora los metadatos pueden ser: 
+            </p>
+            <ul>
+                <li>Fecha de creación.</li>
+                <li>Fecha de modificación.</li>
+                <li>Tamaño del archivo.</li>
+                <li>Ruta o ubicación donde se encuentra guardado.</li>
+            </ul>
+            <p>
+                En los documentos <span class="naranja">HTML</span> también existen metadatos. En este caso, los metadatos se alojan internamente dentro del mismo documento HTML mediante etiquetas &lt;<span class="verde">meta</span>> ubicadas en la sección &lt;<span class="verde">head</span>>.
+            </p>
+        </li>
+        <li>
+            <b>¿Cómo interpreta <span class="naranja">HTML</span> un navegador?</b><br>
+            <p>
+                Un navegador posee motores de interpretación integrados que analizan códigos como <span class="naranja">HTML</span>, <span class="azul">CSS</span> y <span class="amarillo">JavaScript</span> para representar páginas web y ejecutar funcionalidades interactivas.
+            </p>
+        </li>
+        <li>
+            <b>¿Qué es la importancia semántica?</b><br>
+            <p>
+                La importancia semántica en <span class="naranja">HTML</span> se refiere al uso correcto de las etiquetas según el significado del contenido que representan. Esto permite que los navegadores y, especialmente, los motores de búsqueda interpreten mejor la estructura y el contenido de una página web.
+            </p>
+            <p>
+                La semántica es muy importante para los motores de búsqueda como <code>Google</code>, ya que les facilita analizar e indexar correctamente la información de una página. Gracias a esto, los buscadores pueden comprender mejor qué contenido es principal, qué partes son navegación, artículos, títulos o información secundaria, mejorando así el posicionamiento SEO en los resultados de búsqueda.
+            </p>
+        </li>
+    </ul>
+<br>
+<hr>
+<br>
+</body>
+</html>
+
